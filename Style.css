@@ -14,7 +14,7 @@ body{
     display:flex;
     flex-direction:column;
     min-height:100vh;
-    background:#fff0f5;
+    background:#FFF9F8;
 }
 .logo {
     width: 80px;
@@ -28,10 +28,11 @@ body{
     padding-left: 10px;
 }
 nav {
-    background-color: pink;
+    background-color: #F8C8D8;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 nav h1 {
@@ -59,7 +60,7 @@ nav ul li a {
     flex-wrap: wrap;
 }
 footer {
-    background-color: pink;
+    background-color:#F8C8D8;
     color: white;
     text-align: center;
     padding: 15px;
