@@ -28,7 +28,7 @@ body{
     padding-left: 10px;
 }
 nav {
-    background:#f71ff72b;
+    background:#7d4659;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +60,7 @@ nav ul li a {
     flex-wrap: wrap;
 }
 footer {
-    background-color: rgb(230, 187, 194);
+    background-color: #7d4659;
     color: white;
     text-align: center;
     padding: 15px;

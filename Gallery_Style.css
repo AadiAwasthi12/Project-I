@@ -14,7 +14,6 @@
     background:white;
     padding:15px;
     border-radius:10px;
-    box-shadow:0 0 10px gray;
 }
 
 .card img {
@@ -31,7 +30,7 @@
 .order{
     margin-top:15px;
     padding:10px 25px;
-    background:#d63384;
+    background:#B8236F;
     color:white;
     border:none;
     border-radius:6px;
