@@ -14,7 +14,11 @@ body{
     display:flex;
     flex-direction:column;
     min-height:100vh;
+<<<<<<< HEAD
     background:#FFF9F8;
+=======
+    background: #FFF0F5;
+>>>>>>> main
 }
 .logo {
     width: 80px;
@@ -28,7 +32,11 @@ body{
     padding-left: 10px;
 }
 nav {
+<<<<<<< HEAD
     background-color: #F8C8D8;
+=======
+    background-color: #7d4659;
+>>>>>>> main
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +68,11 @@ nav ul li a {
     flex-wrap: wrap;
 }
 footer {
+<<<<<<< HEAD
     background-color:#F8C8D8;
+=======
+    background-color:#7d4659;
+>>>>>>> main
     color: white;
     text-align: center;
     padding: 15px;
