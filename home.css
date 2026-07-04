@@ -75,7 +75,7 @@ box-shadow:0 10px 25px rgba(232,109,141,.35);
 }
 button:hover{
 background:#d85277;
-transform:translateY(-5px);
+transform:translateX(-5px);
 }
 /* Slider */
 .slider{
@@ -89,7 +89,7 @@ box-shadow:0 10px 30px rgba(0,0,0,.15);
 width:100%;
 height:100%;
 object-fit:cover;
-transition:1s;
+
 }
 /* Footer */
 footer{

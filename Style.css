@@ -14,7 +14,7 @@ body{
     display:flex;
     flex-direction:column;
     min-height:100vh;
-    background:#fffaf5;
+    background: #FFF0F5;
 }
 .logo {
     width: 80px;
@@ -28,7 +28,7 @@ body{
     padding-left: 10px;
 }
 nav {
-    background:#7d4659;
+    background-color: #7d4659;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -60,7 +60,7 @@ nav ul li a {
     flex-wrap: wrap;
 }
 footer {
-    background-color: #7d4659;
+    background-color:#7d4659;
     color: white;
     text-align: center;
     padding: 15px;
