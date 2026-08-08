@@ -1,20 +1,35 @@
-const images = [
-"Images/rose.jpg",
-"Images/tulip.jpg",
-"Images/peony.jpg",
-"Images/sunflower.jpg",
-"Images/lily.webp",
-"Images/daisies.jpg",
-"Images/Rhododendron.jpg",
-"Images/Hibiscus.jpg",
-"Images/marigold.jpg"
-];
-let i = 0;
-const slide = document.getElementById("slide");
-setInterval(() => {
-i++;
-if(i >= images.length){
-i = 0;
+
+function toggleMenu() {
+    const navMenu = document.getElementById("nav-menu");
+    if (navMenu) {
+        navMenu.classList.toggle("active");
+    }
 }
-slide.src = images[i];
-},2500);
+
+
+function toggleCart() {
+    const cartPanel = document.getElementById("cart-panel");
+    const overlay = document.getElementById("cart-overlay");
+
+    if (cartPanel) cartPanel.classList.toggle("active");
+    if (overlay) overlay.classList.toggle("active");
+}
+
+
+function closeIfOverlayClicked(event) {
+    if (event.target.id === "cart-overlay") {
+        toggleCart();
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navMenu = document.getElementById("nav-menu");
+    if (navMenu) {
+        navMenu.addEventListener("click", function (event) {
+            if (event.target.tagName === "A") {
+                navMenu.classList.remove("active");
+            }
+        });
+    }
+});
