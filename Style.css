@@ -5,20 +5,17 @@
     font-family: Arial, sans-serif;
 }
 
-html,
-body {
+html,body
+ {
     height: 100%;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
     background: #FFF0F5;
-
 }
-
 .logo {
     width: 80px;
     height: 80px;
@@ -30,11 +27,8 @@ body {
     object-fit: contain;
     padding-left: 10px;
 }
-
 nav {
-
     background-color: #7d4659;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,62 +53,118 @@ nav ul li a {
     color: white;
     font-weight: bold;
 }
-
 .container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
-
 footer {
-
-    background-color: #7d4659;
-
+    background-color:#7d4659;
     color: white;
     text-align: center;
     padding: 15px;
 }
-
-main {
+main{
     flex: 1;
 }
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:30px;   
+    list-style:none;
+}
 
-@media screen and (max-width:768px) {
+#cart-btn{
+    background:none;
+    border:none;
+    color:inherit;
+    font:inherit;
+    cursor:pointer;
+    padding:0;
+}
 
-    nav {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
+#cart-btn:hover{
+    color:#B8236F;
+}
+#hamburger-btn{
+    display:none;           
+    flex-direction:column;
+    justify-content:space-between;
+    width:28px;
+    height:20px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+}
+
+#hamburger-btn span{
+    display:block;
+    width:100%;
+    height:3px;
+    background:white;
+    border-radius:2px;
+}
+@media screen and (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
     }
 
-    nav h1 {
-        margin-bottom: 15px;
+    nav h1{
+        margin-bottom:15px;
     }
 
-    nav ul {
-        flex-direction: column;
-        width: 100%;
+    .nav-top{
+        width:100%;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    #hamburger-btn{
+        display:flex;      
     }
 
-    .gallery {
-        padding: 20px;
+    nav ul{
+        display:none;      
+        flex-direction:column;
+        width:100%;
     }
 
-    .container {
-        gap: 15px;
+    nav ul.active{
+        display:flex;
     }
 
-    .card {
-        max-width: 100%;
+    nav ul li{
+        margin:10px 0;
     }
 
-    .order {
-        width: 100%;
+    .gallery{
+        padding:20px;
     }
 
+    .container{
+        gap:15px;
+    }
+
+    .card{
+        max-width:100%;
+    }
+
+    .order{
+        width:100%;
+    }
+
+}
+.nav-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;}
+
+nav ul li a.login-link{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
 }
