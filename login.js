@@ -4,11 +4,11 @@ function login() {
     let password = document.getElementById("password").value;
     let error = document.getElementById("error");
 
-    // Predefined credentials
+   
     const validUsername = "user";
     const validPassword = "user1";
 
-    // Empty validation
+    
     if (username === "") {
         error.innerHTML = "Please enter username.";
         return;
